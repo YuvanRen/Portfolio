@@ -22,7 +22,7 @@ const rajdhani = Rajdhani({
 });
 
 export const metadata: Metadata = {
-  title: 'Yuvan Rengifo | Cyberpunk Portfolio',
+  title: 'Yuvan Rengifo | Portfolio',
   description: 'Software Engineer Portfolio - Yuvan Rengifo',
 }
 
