@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 13, 13, 13;
+  --background-end-rgb: 0, 0, 0;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+    to bottom,
+    rgb(var(--background-start-rgb)),
+    rgb(var(--background-end-rgb))
+  );
+}
+
+@layer utilities {
+  .font-cyber {
+    font-family: var(--font-orbitron);
+  }
+  .font-mono-cyber {
+    font-family: var(--font-share-tech-mono);
+  }
+  .font-body-cyber {
+    font-family: var(--font-rajdhani);
+  }
+}
+
+@layer components {
+  .cyber-button {
+    @apply relative px-8 py-3 bg-transparent border-2 border-cyber-yellow text-cyber-yellow 
+    font-cyber tracking-wider uppercase
+    hover:bg-cyber-yellow hover:text-cyber-black transition-all duration-300
+    before:content-[''] before:absolute before:top-0 before:left-0 
+    before:w-2 before:h-2 before:border-t-2 before:border-l-2 before:border-cyber-yellow
+    after:content-[''] after:absolute after:bottom-0 after:right-0 
+    after:w-2 after:h-2 after:border-b-2 after:border-r-2 after:border-cyber-yellow;
+  }
+
+  .cyber-glitch {
+    @apply relative font-cyber text-cyber-yellow;
+    animation: glitch 2s infinite;
+  }
+
+  .cyber-glitch::before,
+  .cyber-glitch::after {
+    @apply absolute top-0 left-0 w-full;
+    content: attr(data-text);
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  }
+
+  .cyber-glitch::before {
+    @apply text-cyber-yellow;
+    animation: glitch-top 2s infinite linear alternate-reverse;
+  }
+
+  .cyber-glitch::after {
+    @apply text-cyber-yellow;
+    animation: glitch-bottom 3s infinite linear alternate-reverse;
+    clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+  }
+
+  .cyber-card {
+    @apply bg-cyber-black/80 border border-cyber-blue/20 backdrop-blur-sm
+    rounded-lg p-6 hover:border-cyber-blue transition-all duration-300
+    font-body-cyber;
+  }
+
+  .nav-link {
+    @apply text-cyber-yellow hover:text-cyber-blue transition-colors duration-300
+    relative font-mono-cyber tracking-wider
+    after:content-[''] after:absolute after:bottom-0 after:left-0
+    after:w-0 after:h-0.5 after:bg-cyber-blue hover:after:w-full
+    after:transition-all after:duration-300;
+  }
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  82% {
+    transform: translate(10px, -10px);
+    opacity: 0.8;
+  }
+  84% {
+    transform: translate(-10px, 10px);
+    opacity: 0.8;
+  }
+  86% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes glitch-top {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(15px);
+  }
+  40% {
+    transform: translate(-15px);
+  }
+  60% {
+    transform: translate(15px);
+  }
+  80% {
+    transform: translate(-5px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes glitch-bottom {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-15px);
+  }
+  40% {
+    transform: translate(15px);
+  }
+  60% {
+    transform: translate(-15px);
+  }
+  80% {
+    transform: translate(5px);
+  }
+  100% {
+    transform: translate(0);
+  }
+} 
