@@ -45,14 +45,6 @@ cyber-portfolio/
 └── README.md
 ```
 
-## Deployment
-
-The site can be easily deployed to Vercel:
-
-1. Push your code to GitHub
-2. Import your repository to Vercel
-3. Deploy!
-
 ## License
 
 MIT License 
