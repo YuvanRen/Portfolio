@@ -1,4 +1,4 @@
-# Cyberpunk Portfolio
+# Portfolio
 
 A modern, cyberpunk-themed portfolio website built with Next.js and TailwindCSS, featuring a sleek design inspired by Cyberpunk 2077.
 
