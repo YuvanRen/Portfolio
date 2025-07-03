@@ -151,4 +151,16 @@ body {
   100% {
     transform: translate(0);
   }
+}
+
+@media (max-width: 400px) {
+  .cyber-glitch {
+    font-size: 1.75rem !important;
+    animation: none !important;
+  }
+  .cyber-glitch::before,
+  .cyber-glitch::after {
+    animation: none !important;
+    content: none !important;
+  }
 } 

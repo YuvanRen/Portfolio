@@ -23,7 +23,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto">
             <div className="text-center">
               <h1 
-                className="cyber-glitch text-5xl md:text-7xl font-bold text-cyber-yellow mb-6"
+                className="cyber-glitch text-3xl sm:text-5xl md:text-7xl font-bold text-cyber-yellow mb-6 overflow-x-hidden"
                 data-text="YUVAN RENGIFO"
               >
                 YUVAN RENGIFO
