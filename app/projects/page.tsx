@@ -10,7 +10,6 @@ export default function Projects() {
       technologies: ["React", "Node.js", "MongoDB", "Express", "NYC Open Data API", "TensorFlow", "MapboxGL", "WebSockets"],
       highlights: [
         "Integrated real-time data streaming from NYC Open Data API with WebSocket connections",
-        "Developed machine learning model for incident classification with 92% accuracy",
         "Created interactive heat maps and visualization using MapboxGL",
         "Implemented real-time notification system for user-defined areas",
         "Built responsive dashboard with crime statistics and trend analysis",
@@ -34,23 +33,7 @@ export default function Projects() {
       github: "https://github.com/YuvanRen/GenForce-SW"
     },
     {
-      title: "Microservices-Based Medical Clinic System",
-      date: "March 2024",
-      role: "Lead Developer",
-      description: "Architected and implemented a comprehensive medical clinic management system using microservices architecture, focusing on scalability, security, and HIPAA compliance. The system handles patient records, appointment scheduling, and billing operations with real-time synchronization.",
-      technologies: ["Java", "Spring Boot", "Docker", "Kubernetes", "PostgreSQL", "RabbitMQ", "JWT", "Maven"],
-      highlights: [
-        "Designed and implemented 8 microservices with domain-driven design principles",
-        "Integrated OAuth2 and JWT for secure authentication across services",
-        "Implemented event-driven architecture using RabbitMQ for inter-service communication",
-        "Containerized services with Docker and orchestrated with Kubernetes",
-        "Achieved 99.9% uptime and sub-200ms response times under load",
-        "Implemented comprehensive logging and monitoring using ELK stack"
-      ],
-      github: "https://github.com/YuvanRen/clinic-microservices"
-    },
-    {
-      title: "CyberKernel - Custom Linux Kernel Module",
+      title: "Kernel - Custom Linux Kernel Module",
       date: "January 2024",
       role: "Systems Developer",
       description: "Developed a custom Linux kernel module that implements a cybersecurity-focused system monitoring solution. The module provides real-time process tracking, system call interception, and rootkit detection capabilities while maintaining minimal performance overhead.",
@@ -63,7 +46,22 @@ export default function Projects() {
         "Built kernel module installation and configuration tools",
         "Integrated with Linux Security Modules (LSM) framework"
       ],
-      github: "https://github.com/YuvanRen/cyberkernel"
+      github: "https://github.com/YuvanRen/CS492/tree/main/yrengifo-project"
+    },
+    {
+      title: "Microservices-Based Medical Clinic System",
+      date: "March 2024",
+      role: "Lead Developer",
+      description: "Architected and implemented a comprehensive medical clinic management system using microservices architecture, focusing on scalability, security, and HIPAA compliance. The system handles patient records, appointment scheduling, and billing operations with real-time synchronization.",
+      technologies: ["Java", "Spring Boot", "Docker", "Kubernetes", "PostgreSQL", "RabbitMQ", "JWT", "Maven"],
+      highlights: [
+        "Designed and implemented 8 microservices with domain-driven design principles",
+        "Integrated OAuth2 and JWT for secure authentication across services",
+        "Implemented event-driven architecture using RabbitMQ for inter-service communication",
+        "Containerized services with Docker and orchestrated with Kubernetes",
+        "Implemented comprehensive logging and monitoring using ELK stack"
+      ],
+      github: "https://github.com/YuvanRen/clinic-microservices"
     }
   ];
 
