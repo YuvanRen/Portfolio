@@ -3,18 +3,35 @@ import Navigation from '../components/Navigation';
 export default function Projects() {
   const projects = [
     {
-      title: "NeuroPulse Fitness - Cyberpunk Workout Tracker",
-      date: "February 2024",
-      role: "Full Stack Developer",
-      description: "Developed a cyberpunk-themed fitness application using React Native and Firebase, featuring real-time workout tracking, augmented reality exercise form checking, and a gamified progression system inspired by cyberpunk aesthetics.",
-      technologies: ["React Native", "Firebase", "TensorFlow.js", "Node.js", "Express", "AR Kit", "TypeScript"],
+      title: "UCNow – Crime Analysis & Reporting Platform",
+      date: "April 2024",
+      role: "Lead Developer",
+      description: "Built a comprehensive crime analysis and reporting platform that combines official NYC crime data with community-sourced reports. The application features interactive heat maps, real-time alerts, and machine learning-powered incident classification.",
+      technologies: ["React", "Node.js", "MongoDB", "Express", "NYC Open Data API", "TensorFlow", "MapboxGL", "WebSockets"],
       highlights: [
-        "Implemented AR exercise form detection using TensorFlow.js for real-time feedback",
-        "Created a gamified progression system with cyberpunk-themed achievements and ranks",
-        "Designed responsive UI with neon aesthetics and animated transitions",
-        "Integrated Firebase for real-time data synchronization and user authentication",
+        "Integrated real-time data streaming from NYC Open Data API with WebSocket connections",
+        "Developed machine learning model for incident classification with 92% accuracy",
+        "Created interactive heat maps and visualization using MapboxGL",
+        "Implemented real-time notification system for user-defined areas",
+        "Built responsive dashboard with crime statistics and trend analysis",
+        "Deployed automated CI/CD pipeline using GitHub Actions"
       ],
-      github: "https://github.com/YuvanRen/neuropulse-fitness"
+      github: "https://github.com/Ejinks2/CS546_Group36"
+    },
+    {
+      title: "GenForce-SW – Solar Project Material Automation & Cost Estimation (.NET Desktop)",
+      date: "July 2024 – September 2024",
+      role: "Software Engineer & Automation Developer",
+      description: "Engineered a robust .NET-based desktop application to automate the extraction, calculation, and cost estimation of materials for solar panel projects. GenForce-SW leverages advanced parsing logic, dynamic data handling, and a database-driven pricing engine to streamline material management and deliver highly accurate cost predictions. The application features a user-centric interface with error validation, dark mode, and tabbed navigation, significantly reducing manual effort and minimizing calculation errors in solar project planning.",
+      technologies: [".NET", "C#", "WinForms/WPF", "SQL Server", "Azure ML", "Docker"],
+      highlights: [
+        "Developed an automated material extraction system that parses and organizes complex input data for solar installations, improving efficiency and accuracy.",
+        "Designed and implemented a cost estimation wizard that dynamically calculates material costs using a database of predefined pricing, reducing manual errors and accelerating project workflows.",
+        "Created custom data parsing logic to aggregate and group material quantities, enabling precise and scalable cost estimation for diverse project requirements.",
+        "Integrated robust error handling and real-time input validation, including visual feedback for data entry errors, to enhance user experience and data integrity.",
+        "Architected a modular, database-driven pricing and material correlation engine, supporting instant updates and future scalability for new materials and pricing models."
+      ],
+      github: "https://github.com/YuvanRen/GenForce-SW"
     },
     {
       title: "Microservices-Based Medical Clinic System",
@@ -31,22 +48,6 @@ export default function Projects() {
         "Implemented comprehensive logging and monitoring using ELK stack"
       ],
       github: "https://github.com/YuvanRen/clinic-microservices"
-    },
-    {
-      title: "UCNow – Crime Analysis & Reporting Platform",
-      date: "April 2024",
-      role: "Lead Developer",
-      description: "Built a comprehensive crime analysis and reporting platform that combines official NYC crime data with community-sourced reports. The application features interactive heat maps, real-time alerts, and machine learning-powered incident classification.",
-      technologies: ["React", "Node.js", "MongoDB", "Express", "NYC Open Data API", "TensorFlow", "MapboxGL", "WebSockets"],
-      highlights: [
-        "Integrated real-time data streaming from NYC Open Data API with WebSocket connections",
-        "Developed machine learning model for incident classification with 92% accuracy",
-        "Created interactive heat maps and visualization using MapboxGL",
-        "Implemented real-time notification system for user-defined areas",
-        "Built responsive dashboard with crime statistics and trend analysis",
-        "Deployed automated CI/CD pipeline using GitHub Actions"
-      ],
-      github: "https://github.com/YuvanRen/ucnow-platform"
     },
     {
       title: "CyberKernel - Custom Linux Kernel Module",
