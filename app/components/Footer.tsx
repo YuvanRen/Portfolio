@@ -39,7 +39,7 @@ export default function Footer() {
             <h3 className="text-cyber-yellow font-cyber text-lg mb-4">Contact</h3>
             <ul className="space-y-2">
               <li className="text-gray-300 font-mono-cyber">
-                <span className="text-cyber-blue">Email:</span> yuvan.rengifo@stevens.edu
+                <span className="text-cyber-blue">Email:</span> yrengifo@stevens.edu
               </li>
               <li className="text-gray-300 font-mono-cyber">
                 <span className="text-cyber-blue">Phone:</span> (201) 665-5833
